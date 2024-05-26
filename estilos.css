@@ -23,7 +23,7 @@ input[type="number"] {
 
 button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #32b2fc;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -34,11 +34,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
+#passwordDisplay {
+    text-align: center;
+    font-weight: bold;
 }
