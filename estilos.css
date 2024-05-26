@@ -1,7 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 h1, h2 {
@@ -23,7 +31,7 @@ input[type="number"] {
 
 button {
     padding: 5px 10px;
-    background-color: #32b2fc;
+    background-color: #00cc00; /* Verde */
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -31,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #006600; /* Verde más oscuro al pasar el cursor */
 }
 
 #passwordDisplay {
