@@ -1,16 +1,7 @@
-const passwordForm = document.getElementById('passwordForm');
-const generateBtn = document.getElementById('generateBtn');
-const passwordDisplay = document.getElementById('passwordDisplay');
+import { generatePassword } from './passwordGenerator.js';
 
-function generatePassword(length) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[]|;:,.<>?';
-    let password = '';
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * characters.length);
-        password += characters[randomIndex];
-    }
-    return password;
-}
+const passwordForm = document.getElementById('passwordForm');
+const passwordDisplay = document.getElementById('passwordDisplay');
 
 passwordForm.addEventListener('submit', function(event) {
     event.preventDefault();
